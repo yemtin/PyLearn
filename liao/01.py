@@ -1,5 +1,13 @@
-import time
-words = input('Lee,happy one-year anniversary!:')
-for item in words.split():
-    print('\n'.join([''.join([(item[(x-y) % len(item)] if ((x*0.05)**2+(y*0.1)**2-1)**3-(x*0.05)**2*(y*0.1)**3 <= 0 else ' ') for x in range(-30, 30)]) for y in range(12, -12, -1)]))
-    time.sleep(1.5)
+print('I\'m ok')
+print("i'm learning python")
+print("\\\n\\")
+print("\\\t\\")
+print(r'\\\t\\')
+print('''ymt
+lbc
+lsy
+hlt''')
+print(r'''line1
+line2''')
+a=True
+print("a")
