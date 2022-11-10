@@ -9,5 +9,5 @@ lsy
 hlt''')
 print(r'''line1
 line2''')
-a=True
-print("a")
+print("I don't wanna be common.")
+
