@@ -12,3 +12,5 @@ line2''')
 print("I don't wanna be common.")
 print("hello,lbc")
 print("love you")
+print("i wanna be better")
+
