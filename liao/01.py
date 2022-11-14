@@ -13,5 +13,5 @@ print("I don't wanna be common.")
 print("hello,lbc")
 print("love you")
 print("i wanna be better")
-print('%2d-502d'%(3,1))
+print("ohoh")
 
