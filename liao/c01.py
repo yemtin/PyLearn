@@ -38,4 +38,22 @@ age=20
 
 print('我叫'+name+'今年，'+str(age)+'岁')
 
+#输入函数 input 
+present=input('大圣想要什么礼物呢？')
+print(present,type(present))
+
+#运算符
+print(1+3)
+print(2*8)
+print(11/2)
+print(11%2)
+
+
+
+
+
+
+
+
+
 
