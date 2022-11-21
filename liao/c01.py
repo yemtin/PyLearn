@@ -49,6 +49,37 @@ print(11/2)
 print(11%2)
 print(-9%4)
 
+a=3+3
+print(a)
+b=c=d=20
+print(b,id(b))
+print(c,id(c))
+print(d,id(d))
+
+a=20
+a+=30
+print(a)
+a//=2
+print(a)
+
+a,b=10,20
+print(a>b)
+print(a==b)
+print(a is b)
+lst1=[11,22,33,44]
+lst2=[11,22,33,44]
+print(lst1==lst2)
+print(lst1 is lst2)
+print(id(lst1))
+print(id(lst2))
+
+
+a,b=1,2
+print(a==1 and b==2)
+
+
+
+
 
 
 
