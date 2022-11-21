@@ -78,6 +78,14 @@ a,b=1,2
 print(a==1 and b==2)
 
 
+print(4&8)
+print(4|8)
+print(4<<8)
+print(4>>8)
+
+
+
+
 
 
 
