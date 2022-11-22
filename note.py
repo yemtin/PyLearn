@@ -63,7 +63,6 @@ def loop_name():
     for item in name: # for ... in ...
         print(item)
 
-print(zz)
 
 loop_name()
 

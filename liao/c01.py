@@ -83,6 +83,22 @@ print(4|8)
 print(4<<8)
 print(4>>8)
 
+#把大象装冰箱
+print('1.把冰箱门打开')
+print('2.把大象放进去')
+
+
+#测试对象的布尔值
+print(bool(False))
+print(bool([]))
+
+
+#选择结构
+money=1000
+s=int(input('请输入取款金额'))
+if money>=s:
+    money=money-s
+    print('取款成功，余额为：',money)
 
 
 
