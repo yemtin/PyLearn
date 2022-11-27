@@ -1,10 +1,14 @@
 
-a=0
-while a<3:  #条件执行体
-    pwd=input("请输入密码：")
-    if pwd=="8888":
-     print("密码正确")
-     break
-    else:
-       print("密码不正确")
-       a+=1    #改变变量
+#continue
+'''要求输出1-50之间所有5的倍数'''
+for item in range(1,51):
+    if item%5==0:
+        print(item)
+
+
+        print('------------使用continue-----------')
+        for item in range(1,51):
+            if item%5!=0:
+                continue
+            print(item)
+
