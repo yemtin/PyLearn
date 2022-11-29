@@ -1,8 +1,26 @@
-for i in range(1,10):  #行数
-    for j in range(1,i+1):
-        print(i,'*',j,'=',i*j,end='\t')
-    print()
+'''流程控制语句在二重循环中的使用'''
+for i in range(5):   #外层执行5次 i=0
+    for j in range(1,11):  #j=1
+        if j%2==0:
+            break
+        print(j)
 
+
+
+
+for i in range(5):
+    for j in range (1,11):
+        if j%2==0:
+            break
+    print(j)
+
+
+for i in range(5):
+    for j in range(1,11):
+        if j%2==0:
+            continue
+        print(j,end='\t')
+    print()
 
         
                 
