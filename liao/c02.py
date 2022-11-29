@@ -19,8 +19,16 @@ for i in range(5):
     for j in range(1,11):
         if j%2==0:
             continue
-        print(j,end='\t')
-    print()
+        print(j,end='\t')   #不换行，在末尾加空格
+    print()  #换行
+
+
+for i in range(5):
+    for j in range(1,11):
+        if j%2==0:
+            continue
+    print(j,end='\t')
+
 
         
                 
