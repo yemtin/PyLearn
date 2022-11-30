@@ -30,6 +30,14 @@ for i in range(5):
     print(j,end='\t')
 
 
+for i in range(10):
+    for j in range(1,21):
+        if j%3==0:
+            continue
+    print(j,end='\t')
+    print()
+
+
         
                 
 
