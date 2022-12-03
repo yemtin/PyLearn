@@ -1,44 +1,6 @@
-'''流程控制语句在二重循环中的使用'''
-for i in range(5):   #外层执行5次 i=0
-    for j in range(1,11):  #j=1
-        if j%2==0:
-            break
-        print(j)
-
-
-
-
-for i in range(5):
-    for j in range (1,11):
-        if j%2==0:
-            break
-    print(j)
-
-
-for i in range(5):
-    for j in range(1,11):
-        if j%2==0:
-            continue
-        print(j,end='\t')   #不换行，在末尾加空格
-    print()  #换行
-
-
-for i in range(5):
-    for j in range(1,11):
-        if j%2==0:
-            continue
-    print(j,end='\t')
-
-
-for i in range(10):
-    for j in range(1,21):
-        if j%3==0:
-            continue
-    print(j,end='\t')
-    print()
-
-
-        
-                
-
-
+#列表
+a=10
+lst=['hello','world',98]
+print(id(lst))
+print(type(lst))
+print(lst)
