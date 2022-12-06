@@ -1,10 +1,19 @@
-lst=[10,20,30,40]
-#换一个
-lst[2]=100 #索引
+#排序
+lst=[20,40,10,98,54]
+print('排序前的',lst)
+lst.sort()    #升序
+print('排序后的',lst)
+
+lst.sort(reverse=True)  #降序  reverse=False 为升序
 print(lst)
-#换几个
-lst[1:3]=[300,400,500,600]
+
+
+print('---------------------使用内置函数sorted(),产生新的列表---------------------')
+lst=[20,40,10,98,54]
+print('原列表',lst)
+new_list=sorted(lst)
 print(lst)
+print(new_list)
 
 
 
