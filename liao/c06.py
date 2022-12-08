@@ -1,13 +1,18 @@
-#字典（一对一对的元素）
-#创建
+#删
 scores={'张三':100,'李四':98,'王五':45}
+del scores['张三']  #删除
 print(scores)
-print(type(scores))
+#scores.clear()  #清除字典
+print(scores)
 
 
-student=dict(name='jack',age=20)
-print(student)
+#增
+scores['陈六']=98    #新增
+print(scores)
+
+#修改
+scores['陈六']=100
+print(scores)
 
 
-d={}
-print(d)
+
