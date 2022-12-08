@@ -1,7 +1,11 @@
-#列表的生成
-lst=[i*i for i in range(1,10)]
-print(lst)
+#元素的获取
+#方式1
+scores={'张三':100,'李四':98,'王五':45}
+print(scores['张三']) 
+#print(scores['陈六]) #keyerror
+  
 
-
-lst2=[i*2 for i in range(1,11)]
-print(lst2)
+#方式2
+print(scores.get('张三'))
+print(scores.get('陈六'))   #none
+print(scores.get('马奇',99))
