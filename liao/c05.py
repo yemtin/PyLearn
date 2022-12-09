@@ -1,11 +1,8 @@
-#获取字典试图
-scores={'张三':100,'李四':98,'王五':45}
-keys=scores.keys()
-print(keys)
-print(type(keys))
+#字典的特点
+d={'name':'张三','name':'李四'}
+print(d)     #key不可重复
 
-values=scores.values()
-print(values)
+d={'name':'张三','nikename':'张三'} #value
+print(d)
 
-items=scores.items()
-print(items)
+
