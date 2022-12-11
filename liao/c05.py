@@ -1,15 +1,11 @@
-#元组的遍历
-t=('Python','world',98)
-#获取元组的第一种方式，使用索引
-print(t[0])
-print(t[1])
-print(t[2])
+#集合的相关操作
+s={2,3,3,4,5,5,6,7}
+#增
+s.add(10)  #增一个
+print(s)
 
-
-
-#遍历元组
-for item in t:
-    print(item)
+s.update({200,300,400})
+print(s)
 
 
 
