@@ -1,20 +1,20 @@
- #元组
-   #不可变序列  字符串 元组  用小括号
-   #创建
-   #第一种
-t=('Python','world',98)
-print(t)
-print(type(t))
-  
-#第二种
-t2=tuple(('Python','world',98))
-print(t2)
+ #集合  与list区别 无value
+ #创建  {}  set()
+s={2,3,3,4,5,5,6,7}
+print(s)
+#不重复
 
-#空元组
-t3=tuple()
-print(t3)
-t4=()
-print(t4)
+s1=set(range(6))
+print(s1)
+print(s1,type(s1))
+
+s2=set([1,23,33,44,55])
+print(s2)
+
+
+s3=set=((1,2,3,4,5,6))
+print(s3)
+print(s3,type(s3))
 
 
 
