@@ -1,22 +1,15 @@
- #集合  与list区别 无value
- #创建  {}  set()
-s={2,3,3,4,5,5,6,7}
-print(s)
-#不重复
-
-s1=set(range(6))
-print(s1)
-print(s1,type(s1))
-
-s2=set([1,23,33,44,55])
-print(s2)
+#集合之间的关系
+#子集
+s1={10,20,30,40,50,60}
+s2={10,20,30,40}
+s3={10,20,30}
+print(s2.issubset(s1))
+print(s3.issubset(s2))
 
 
-s3=set=((1,2,3,4,5,6))
-print(s3)
-print(s3,type(s3))
+#超集
+print(s1.issuperset(s2))
+print(s2.issuperset(s3))
 
-
-
-
-
+#交集
+print(s2.isdisjoint(s3))
