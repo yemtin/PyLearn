@@ -8,3 +8,9 @@ print('|'.join(s))
 print('*'.join(s))
 
 
+print('apple'>'app')
+print('apple'>'banana')
+print(ord('a'),ord('b'))
+print(chr(97),chr(98))
+
+
