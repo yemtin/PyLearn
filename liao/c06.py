@@ -1,16 +1,21 @@
-s='hello,python'
-print(s.replace('python','Java'))
-s1='hello,python,python,python'
-print(s1.replace('python','java',2))  #替换前两个
+#格式化
+#%
+name='张三'
+age=20
+print('我叫%s,今年%d岁' % (name,age))
 
 
-print('|'.join(s))
-print('*'.join(s))
+#{}
+print('我叫{0},今年{1}岁'.format(name,age))
+
+print(f'我叫{name},今年{age}')
 
 
-print('apple'>'app')
-print('apple'>'banana')
-print(ord('a'),ord('b'))
-print(chr(97),chr(98))
+#精度宽度
+print('%10d' % 99) #10表示宽度
+print('%.3f' % 3.1415926)  #3表示小数点后几位
+print('%10.3f' % 3.1415926) #
+
+
 
 
