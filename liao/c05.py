@@ -1,15 +1,12 @@
-s='hello,python'
-print(s.replace('python','Java'))
-s1='hello,python,python,python'
-print(s1.replace('python','java',2))  #替换前两个
+#编码和解码
+s='天涯共此时'
+#编码
+print(s.encode(encoding='GBK'))  #在GBK这种编码格中一个中文占两个字节
+print(s.encode(encoding='UTF-8'))  #占三格
+
+bytes=s.encode(encoding='GBK')  #编码
+print(bytes.decode(encoding='GBK')) #解码
+bytes=s.encode(encoding='UTF-8')
+print(bytes.decode(encoding='UTF-8'))
 
 
-print('|'.join(s))
-print('*'.join(s))
-
-
-print('apple'>'app')
-print('apple'>'banana')  #比较原始值
-print(ord('a'),ord('b'))  #得到原始值
-print(chr(97),chr(98))    #得到原来的字符
-print(ord('p'),ord('a'))
