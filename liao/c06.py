@@ -1,9 +1,14 @@
-def calc(a,b):  #a,b称为形势参数，简称形参
-    c=a+b
-    return(c)
+def fun(*A):  #可变的位置形参  结果为元组
+    print(A)
 
-result=calc(10,20)  #10，20称为实参
-print(result)
+fun(10)
+fun(10,20,30)
+fun(38,49,59,60)
 
-res=calc(b=10,a=20)
-print(res)
+
+def fun(**B):
+    print(B)
+fun(a=20)
+fun(a=10,b=30,c=40)
+
+
