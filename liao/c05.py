@@ -1,22 +1,12 @@
-def fun(num):
-    odd=[]
-    even=[]
-    for i in num:
-        if i%2:
-            odd.append(i)
-        else:
-            even.append(i)
-    return odd,even
+#变量
+def fun(a,b):
+    c=a+b   #c为局部变量
+    print(c)
 
-lst=[10,20,29,34,23,44,53,55]
-print(fun(lst))
+name='ye'  #name为全局变量
+print(name)
+def fun2():
+    print(name)
+fun2()
 
-
-def fun(a,b=10):   #b称为默认参数
-  print(a,b)
-
-fun(100)
-fun(20,30)  
-print('hello',end='\t')
-print('world')
 
