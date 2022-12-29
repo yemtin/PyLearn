@@ -10,3 +10,13 @@ def fun(num):
 
 lst=[10,20,29,34,23,44,53,55]
 print(fun(lst))
+
+
+def fun(a,b=10):   #b称为默认参数
+  print(a,b)
+
+fun(100)
+fun(20,30)  
+print('hello',end='\t')
+print('world')
+
