@@ -1,12 +1,12 @@
-#变量
-def fun(a,b):
-    c=a+b   #c为局部变量
-    print(c)
+#递归函数
+def fac(n):
+    if n==1:
+        return 1
+    else:
+        return n*fac(n-1)
+print(fac(6))
+print(fac(1))
 
-name='ye'  #name为全局变量
-print(name)
-def fun2():
-    print(name)
-fun2()
+
 
 
