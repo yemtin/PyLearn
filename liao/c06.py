@@ -1,14 +1,22 @@
-def fun(*A):  #可变的位置形参  结果为元组
-    print(A)
+class Student:   #类的名称 由一个单词或多个单词 首字母大写
+    native_pace='吉林'
+    #初始化方法
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
 
-fun(10)
-fun(10,20,30)
-fun(38,49,59,60)
+    #实例方法
+    def eat(self):
+        print('学生吃饭...')
+    #静态方法
+    @staticmethod
+    def method():
+        print('静态方法')
+    #类方法
+    @classmethod
+    def cm(cls):
+        print('类方法')
 
-
-def fun(**B):
-    print(B)
-fun(a=20)
-fun(a=10,b=30,c=40)
-
-
+#在类之外叫函数
+def drink():
+    print('喝水')
