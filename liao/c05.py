@@ -1,28 +1,23 @@
-#动态绑定属性
-#定义函数
-class Student:
-    def __init__(self,name,age):  #局部变量
-        self.name=name            #实例变量
+#继承
+class Person(object):
+    def __init__(self,name,age):
+        self.name=name
         self.age=age
-    def eat(self):
-        print(self.name+'在吃饭')
+    def info(self):
+        print(self.name,self.age)
 
-#调用函数
-stu1=Student('张三',20)
-stu2=Student('李四',30)
-print(id(stu1))
-print(id(stu2))
-stu1.gender='女'
-print(stu1.name,stu1.age,stu1.gender)
-print(stu2.name,stu2.age)
+class Student(Person):
+    def __init__(self, name, age,stu_no):
+        super().__init__(name, age)
+        self.stu_no=stu_no
 
+class Teacher(Person):
+    def __init__(self, name, age,teachofyear):
+        super().__init__(name, age)
+        self.teachofyear=teachofyear
 
-stu1.eat()
-stu2.eat()
+stu=Student('张三',20,'1001')
+teacher=Teacher('李四',34,10)
 
-#动态方法
-def show():
-    print('定义在类之外得')
-stu1.show=show
-stu1.show()
- 
+#stu.info()Teacher.info()
+print(Student.info)
