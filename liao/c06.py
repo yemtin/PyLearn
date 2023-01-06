@@ -1,45 +1,23 @@
-class Student:   #类的名称 由一个单词或多个单词 首字母大写
-    native_pace='吉林'
-    #初始化方法
+ #封装
+class Car:
+    def __init__(self,brand):
+        self.brand=brand
+    def start(self):
+        print('汽车已启动')
+car=Car('宝马')
+car.start()
+print(car.brand)
+
+
+class Student:
     def __init__(self,name,age):
         self.name=name
-        self.age=age
-
-    #实例方法
-    def eat(self):
-        print('学生吃饭...')
-    #静态方法
-    @staticmethod
-    def method():
-        print('静态方法')
-    #类方法
-    @classmethod
-    def cm(cls):
-        print('类方法')
-
-#在类之外叫函数
-def drink():
-    print('喝水')
-
-#创建student类对象
-stu1=Student('张三',20)
-print(id(stu1))
-print(type(stu1))
-print(stu1)
-print('-------------------------------------------')
-print(id(Student))
-print(type(Student))
-print(Student)
-print('-----------------------------------------------------')
-stu1.eat()
-print(stu1.age)
-print(stu1.name)
-print('--------------------------------')
-Student.eat(stu1)
-
-#类属性的使用方法
-print(Student.native_pace)
-stu1=Student('张三',20)
-stu2=Student('李四',30)
-print(stu1.native_pace)
-print(stu2.native_pace)
+        self.__age=age  #年龄不希望在类外部被使用，加__
+    def show(self):
+        print(self.name,self.__age)
+stu=Student('张三',20)
+stu.show()
+#在类外面使用age
+#print(stu.__age)  #错误
+#print(dir(stu))  #查询怎么使用
+print(stu._Student__age)
