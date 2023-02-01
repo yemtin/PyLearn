@@ -20,4 +20,10 @@ import  copy
 computer2=copy.copy(computer)
 print(computer,computer.cpu,computer.disk)
 print(computer2,computer2.cpu,computer2.disk)
+print('------------------------------------------------------')
+#深拷贝
+computer3=copy.deepcopy(computer)
+print(computer,computer.cpu,computer.disk)
+print(computer2,computer2.cpu,computer2.disk)
+
 
