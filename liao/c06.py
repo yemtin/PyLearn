@@ -9,4 +9,5 @@ stu=Studend('张三',20)
 print(dir(stu))
 print(stu)
 print(type(stu))
+                                                                                                                                                                           
 
