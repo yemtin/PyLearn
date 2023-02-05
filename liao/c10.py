@@ -1,13 +1,24 @@
-#第三方模块安装及使用
-#每间隔多长时间执行一次操作任务
-import schedule
-import time
+
+#io操作
+'''file=open('a.txt','r')
+print(file.readlines())
+file.close()
+'''
+
+'''file=open('b.txt','w'#代替|'a'追加)
+file.write('Python')
+file.close()'''
 
 
-def job():
-    print('哈哈----------------')
+src_file=open('logo.png','rb')
 
-schedule.every(3).seconds.do(job)
-while True:
-    schedule.run_pending()
-    time.sleep(1)
+target_file=open('copylogo.png','wb')
+
+target_file.wirte(src_file.read())
+
+target_file.close()
+src_file.close()
+
+
+
+
