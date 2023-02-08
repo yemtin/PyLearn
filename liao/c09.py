@@ -35,11 +35,34 @@ print(c10.add(100,200))'''
 
 
 
-import sys
+'''import sys
 print(sys.getsizeof(24))
 print(sys.getsizeof(45))
 print(sys.getsizeof(True))
-print(sys.getsizeof(False))
+print(sys.getsizeof(False))'''
+
+
+
+
+
+'''#第三方模块安装及使用
+#每间隔多长时间执行一次操作任务
+import schedule
+import time
+
+
+def job():
+    print('哈哈----------------')
+
+schedule.every(3).seconds.do(job)  #三秒执行一次
+while True:
+    schedule.run_pending()
+    time.sleep(1)  #执行一次休眠一秒'''
+
+
+
+
+
 
 
 
