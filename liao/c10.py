@@ -10,14 +10,28 @@ file.write('Python')
 file.close()'''
 
 
-src_file=open('logo.png','rb')
+src_file=open('logo.png','r',encoding='UTF-8')
 
-target_file=open('copylogo.png','wb')
+target_file=open('copylogo.png','w',encoding='UTF-8')
 
 target_file.wirte(src_file.read())
 
 target_file.close()
 src_file.close()
+
+#FileNotFoundError: [Errno 2] No such file or directory: 'logo.png'
+
+
+file=open('a.txt,'r'')
+print(file.read(2))
+
+
+
+
+
+
+
+
 
 
 
