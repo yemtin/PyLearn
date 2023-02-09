@@ -5,5 +5,6 @@ import os
 #直接调用可执行文件
 #os.startfile('C:\\Users\\叶梦婷\\AppData\\Local\\youdao\\dict')
 #print(os.getcwd())
-lst=os.listdir('../_pycache_')
-print(lst)
+'''lst=os.listdir('../_pycache_')
+print(lst)'''
+
