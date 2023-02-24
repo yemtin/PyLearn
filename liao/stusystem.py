@@ -40,6 +40,23 @@ def menu():
     print('\t\t\t\t\t\7.显示学生信息')
     print('\t\t\t\t\t\0.退出')
 def insert():
+    student_list=[]
+    while True:
+        id=input('请输入id')
+        if not id:
+            break
+        name=input('请输入姓名')
+        if not name:
+            break
+
+
+        try:
+            English=input(int('请输入英语成绩'))
+            python=input(int('请输入python成绩'))
+            java=input(int('请输入java'))
+        except:
+         print('输入无效，不是整数，请重新输入')
+         continue
     pass
 def search():
     pass
@@ -56,5 +73,4 @@ def show():
 
 if __name__=='__main__':
     main()
-
 
