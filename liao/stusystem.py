@@ -1,3 +1,4 @@
+filename='stu.txt'
 def main():
     while True:
         menu()
@@ -57,6 +58,27 @@ def insert():
         except:
          print('输入无效，不是整数，请重新输入')
          continue
+        student={'id':id,'name':name,'Enlish':English,'python':python,'java':java}
+        student_list.append(student)
+        answer=input('是否继续添加y/n\n')
+        if answer=='y':
+            continue
+        else:
+            break
+
+
+        #调用save函数
+        save(student_list)
+        print('学生信息录入完成！！！')
+    def save(lst):
+        try:
+            stu_txt=open(filename,'a',encoding='utf-8')
+        except:
+            stu_txt=open(filename,'w',encoding='utf-8')
+        for item in list:
+            stu_txt.write(str(item)+'\n')
+            pass
+
     pass
 def search():
     pass
