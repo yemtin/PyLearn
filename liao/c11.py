@@ -1,7 +1,3 @@
-
-
-
-
 '''book_name='java程序设计教程'
 publish='西安电子科技大学出版社'
 pub_date='2019-02-02'
@@ -17,7 +13,7 @@ print('►➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛➛◄')'''
 
 
 
-lst_name=['林黛玉','薛宝钗','贾元春','贾探春','史湘云']
+'''lst_name=['林黛玉','薛宝钗','贾元春','贾探春','史湘云']
 lst_sig=['➊','➋','➌','➍','➎']
 for i in range(5):
     print(lst_name[i],lst_sig[i])
@@ -30,7 +26,25 @@ for key in d:
 
 print('zip-------------------')
 for s,name in zip(lst_sig,lst_name):
-    print(s,name)
+    print(s,name)'''
 
+
+
+
+
+
+
+'''num=int(input('请输入一个十进制的整数'))
+print(num,'的二进制为：',bin(num))
+print(str(num)+'的二进制数为'+bin(num))
+print('%s的二进制数为:%s' % (num,bin(num))) #格式化
+print('{0}的二进制为:{1}'.format(num,bin(num)))
+print(f'{num}的二进制为：{bin(num)}')   #print('{num}的二进制为：{bin(num)}')则输入一行字符串'''
+
+
+print('当前余额为：\033[0;35m8元\033[m')
+money=int(input('请输入充值金额：'))
+money+=8
+print('当前余额为：\033[0.32m',money,'元\033[m')
 
 
