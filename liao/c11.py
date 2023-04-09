@@ -42,9 +42,31 @@ print('{0}的二进制为:{1}'.format(num,bin(num)))
 print(f'{num}的二进制为：{bin(num)}')   #print('{num}的二进制为：{bin(num)}')则输入一行字符串'''
 
 
-print('当前余额为：\033[0;35m8元\033[m')
+'''print('当前余额为：\033[0;35m8元\033[m')
 money=int(input('请输入充值金额：'))
 money+=8
 print('当前余额为：\033[0.32m',money,'元\033[m')
+'''
+
+
+
+def get_count(s,ch):
+    count=0
+    for item in s:
+        if ch.upper()==item or ch.lower()==item:
+            count+=1
+            return count
+            if_name_=='_main_'
+s='hello,i am origenally from zhanjiang'
+ch=input('请输入字符')
+count=get_count(s,ch)
+print(f'{ch}在{s}中出现的次数为:{count}')
+
+
+
+
+
+
+
 
 
