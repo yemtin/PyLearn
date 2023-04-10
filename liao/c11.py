@@ -50,7 +50,7 @@ print('当前余额为：\033[0.32m',money,'元\033[m')
 
 
 
-def get_number(s,ch):
+'''def get_number(s,ch):
     number=0
     for item in s:
         if ch.upper()==item or ch.lower()==item:
@@ -61,6 +61,26 @@ s='hello,i am origenally from zhanjiang'
 ch=input('请输入字符')
 number=get_number(s,ch)
 print(f'{ch}在{s}中出现的次数为:{number}')
+'''
+
+
+
+'''s=input('请输入密码')
+if s.isdigit():
+    print('输入数字合法')
+else:
+    print('输入数字不合法')
+print('-----------------------------------')
+print('输入数字合法'if s.isdigit() else '输入数字不合法')'''
+
+
+count=input('请输入qq号')
+password=input('请输入密码')
+if count=='123456' and password=='654321':
+    print('登录成功')
+else:
+ print('登录失败')
+
 
 
 
