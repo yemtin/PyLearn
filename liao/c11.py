@@ -74,14 +74,25 @@ print('-----------------------------------')
 print('输入数字合法'if s.isdigit() else '输入数字不合法')'''
 
 
-count=input('请输入qq号')
+'''count=input('请输入qq号')
 password=input('请输入密码')
-if count=='123456' and password=='654321':
+if count=='123456' and password=='654321':  #字符串别忘记用引号
     print('登录成功')
 else:
- print('登录失败')
+ print('登录失败')'''
 
 
+import random
+price=random.randint(1000,1500)
+print('今日竞猜商品价格为小米扫地机器人:价格在[1000,1500]之间:')
+guess=int(input())
+if guess>price:
+    print('大了')
+elif guess<price:
+    print('小了')
+else:
+    print('猜对了')
+print('商品真实价格为：',price)
 
 
 
