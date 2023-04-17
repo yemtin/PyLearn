@@ -82,7 +82,7 @@ else:
  print('登录失败')'''
 
 
-import random
+'''import random
 price=random.randint(1000,1500)
 print('今日竞猜商品价格为小米扫地机器人:价格在[1000,1500]之间:')
 guess=int(input())
@@ -92,10 +92,65 @@ elif guess<price:
     print('小了')
 else:
     print('猜对了')
-print('商品真实价格为：',price)
+print('商品真实价格为：',price)'''
 
 
 
+
+
+
+
+'''x=97
+for _ in range(1,27):
+ print(chr(x),'--------->',x)
+ x+=1
+
+ print('-----------------------------')
+x=97
+while x<=123:
+    print(chr(x),'------>',x)
+    x+=1
+'''
+
+
+'''for z in range(1,4):
+ x=input('请输入用户名')
+ y=input('请输入密码')
+ if x=='adfmin' and y=='adm':
+    print('登录成功')
+    break
+ else:
+    print('用户名或密码不正确')
+    if z<3:
+     print('您还有',3-z,'次机会')
+else:                                 #否则循环结束！！！！！！
+    print('对不起，三次均错误，请联系后台人员')'''
+
+
+import random
+ran=random.randint(1,100)
+for i in range(1,11):
+    num=int(input('在我心中有个数，请你猜一猜'))  #记得输入的是整数形式
+    if num<=ran:
+        print('小了')
+    elif num>=ran:
+        print('大了')
+    else:
+        print('才对了！！！！')
+        break
+print('您一共猜了',i,'次')
+if i<=3:
+    print('你真聪明！')
+elif i>3 and i<=7:
+    print('还行吧')
+else:
+    print('你真笨！')
+
+        
+
+
+
+    
 
 
 
