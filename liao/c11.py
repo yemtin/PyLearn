@@ -127,10 +127,10 @@ else:                                 #否则循环结束！！！！！！
     print('对不起，三次均错误，请联系后台人员')'''
 
 
-import random
+'''import random
 ran=random.randint(1,100)
 for i in range(1,11):
-    num=int(input('在我心中有个数，请你猜一猜'))  #记得输入的是整数形式
+    num=int(input('在我心中有个数，请你猜一猜'))  #记得输入的是整数形式!!!!!!
     if num<=ran:
         print('小了')
     elif num>=ran:
@@ -144,11 +144,23 @@ if i<=3:
 elif i>3 and i<=7:
     print('还行吧')
 else:
-    print('你真笨！')
+    print('你真笨！')'''
+
+
+
+
 
         
 
+coffee_name=('蓝山','卡布奇诺','拿铁','皇家咖啡','女王咖啡','美丽与哀愁')
+print('您好，欢迎来到yemtin的咖啡屋')
+print('本店经营的咖啡有：')
+for index,item in enumerate(coffee_name):
+    print(index+1,'.',item,end='')
 
+index=int(input('\n请输入您喜欢的咖啡编号:'))
+if 0<=index<=len(coffee_name):
+    print(f'您的咖啡[{coffee_name[index-1]}好了,请慢用')
 
     
 
