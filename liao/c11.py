@@ -152,15 +152,15 @@ else:
 
         
 
-coffee_name=('蓝山','卡布奇诺','拿铁','皇家咖啡','女王咖啡','美丽与哀愁')
-print('您好，欢迎来到yemtin的咖啡屋')
-print('本店经营的咖啡有：')
+coffee_name=('Blue Mountain','cappuccino','latte','royal coffee','queen coffee','beauty and sorrow')
+print('hello,welcome to yemtin’s coffeehouse')
+print('here is our coffee list：')
 for index,item in enumerate(coffee_name):
-    print(index+1,'.',item,end='')
+    print(index+1,'.',item,end='')   #index begin by 0 end='' intended to not chang the line
 
-index=int(input('\n请输入您喜欢的咖啡编号:'))
+index=int(input('\n:please input your coffee’s number:'))
 if 0<=index<=len(coffee_name):
-    print(f'您的咖啡[{coffee_name[index-1]}好了,请慢用')
+    print(f'here is your coffee[{coffee_name[index-1]}],enjoy yourself')
 
     
 
