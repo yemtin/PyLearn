@@ -163,14 +163,35 @@ if 0<=index<=len(coffee_name):
     print(f'here is your coffee[{coffee_name[index-1]}],enjoy yourself')'''
 
 
-try:
+'''try:
  score=int(input('please input ypur score:'))  
  if 0<=score<=100:
     print('your score is:',score)
  else:
     raise Exception('number is wrong')
 except Exception as e:
-    print(e)
+    print(e)'''
+
+def is_triangle(a,b,c):
+    if a<0 or b<0 or c<0:
+        raise Exception('they can not be minus')
+    
+    if a+b>c and b+c>a and a+c>b:
+        print(f'the lengths of the size are a={a},b={b},c={c}')
+    else:
+     raise Exception('they can not make a triangle')
+
+
+if __name__=='__main__':
+    try:
+         a=int(input('please input the first side:'))
+         b=int(input('please input the second side:'))
+         c=int(input('please input the third side:'))
+         is_triangle(a,b,c)
+    except Exception as e:
+        print(e)
+
+
 
 
 
