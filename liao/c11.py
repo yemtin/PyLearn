@@ -152,17 +152,26 @@ else:
 
         
 
-coffee_name=('Blue Mountain','cappuccino','latte','royal coffee','queen coffee','beauty and sorrow')
+'''coffee_name=('Blue Mountain','cappuccino','latte','royal coffee','queen coffee','beauty and sorrow')
 print('hello,welcome to yemtin’s coffeehouse')
 print('here is our coffee list：')
 for index,item in enumerate(coffee_name):
-    print(index+1,'.',item,end='')   #index begin by 0 end='' intended to not chang the line
+    print(index+1,'.',item,end='')   #index begin by 0 end='' intended to not change the line
 
-index=int(input('\n:please input your coffee’s number:'))
+index=int(input('\nplease input your coffee’s number:'))
 if 0<=index<=len(coffee_name):
-    print(f'here is your coffee[{coffee_name[index-1]}],enjoy yourself')
+    print(f'here is your coffee[{coffee_name[index-1]}],enjoy yourself')'''
 
-    
+
+try:
+ score=int(input('please input ypur score:'))  
+ if 0<=score<=100:
+    print('your score is:',score)
+ else:
+    raise Exception('number is wrong')
+except Exception as e:
+    print(e)
+
 
 
 
