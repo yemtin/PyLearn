@@ -172,7 +172,7 @@ if 0<=index<=len(coffee_name):
 except Exception as e:
     print(e)'''
 
-def is_triangle(a,b,c):
+'''def is_triangle(a,b,c):
     if a<0 or b<0 or c<0:
         raise Exception('they can not be minus')
     
@@ -189,7 +189,27 @@ if __name__=='__main__':
          c=int(input('please input the third side:'))
          is_triangle(a,b,c)
     except Exception as e:
-        print(e)
+        print(e)'''
+
+
+import math
+class Circle(object):
+    def __init__(self,r):
+        self.r=r
+    
+    def get_area(self):
+        return math.pi*math.pow(self.r,2)
+    def get_perimeter(self):
+        return 2*math.pi*self.r
+
+
+if __name__=='_main_':
+    r=int(input('please input the r:' ))
+    c=Circle(r)
+    print(f'the erea is:{c.get_area()}')
+    print(f'the perimeter is:{c.get_perimeter()}')
+
+
 
 
 
