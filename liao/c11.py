@@ -192,7 +192,7 @@ if __name__=='__main__':
         print(e)'''
 
 
-import math
+'''import math
 class Circle(object):
     def __init__(self,r):
         self.r=r
@@ -207,12 +207,34 @@ if __name__=='_main_':
     r=int(input('please input the r:' ))
     c=Circle(r)
     print(f'the erea is:{c.get_area()}')
-    print(f'the perimeter is:{c.get_perimeter()}')
+    print(f'the perimeter is:{c.get_perimeter()}')'''
 
 
 
+ 
 
 
+class Instrument():
+   def make_sound(self):
+    pass
+
+class Erhu(Instrument):
+    def make_sound(self):
+       print('Erhu is playing')
+class violin(Instrument):
+    def make_sound(self):
+        print('坐飞机卡')
+class piano(Instrument):
+    def make_sound(self):
+        print('piano is playing')
+
+def play(instrument):
+    Instrument.make_sound()
+
+if __name__=='_main_':
+    play(Erhu())
+    play(violin())
+    play(piano())
 
 
 
