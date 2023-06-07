@@ -214,7 +214,7 @@ if __name__=='_main_':
  
 
 
-class Instrument():
+'''class Instrument():
    def make_sound(self):
     pass
 
@@ -223,7 +223,7 @@ class Erhu(Instrument):
        print('Erhu is playing')
 class violin(Instrument):
     def make_sound(self):
-        print('坐飞机卡')
+        print('')
 class piano(Instrument):
     def make_sound(self):
         print('piano is playing')
@@ -235,6 +235,34 @@ if __name__=='_main_':
     play(Erhu())
     play(violin())
     play(piano())
+
+'''
+class Car(object):
+    def __init__(self,type,mun):
+        self.type=type
+        self.mun=mun
+    def start(self):
+        pass
+    def stop(self):
+        pass
+
+class Taxi(Car):
+    def __init__(self, type, mun,company):
+        super().__init__(type, mun)
+        self.company=company
+    def start(self):
+        print('乘客您好')
+        print(f'我是{self.company}出租车公司的，我的车牌是{self.mun}')
+    def stop(self):
+        print('乘客您好，目的地到了')
+    
+if __name__=='__main__':
+    taxi=Taxi('上海大众','京A23422','长城')
+    taxi.start()
+    taxi.stop()
+    print('-'*30)
+
+
 
 
 
