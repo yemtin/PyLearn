@@ -237,7 +237,7 @@ if __name__=='_main_':
     play(piano())
 
 '''
-class Car(object):
+'''class Car(object):
     def __init__(self,type,mun):
         self.type=type
         self.mun=mun
@@ -260,11 +260,70 @@ if __name__=='__main__':
     taxi=Taxi('上海大众','京A23422','长城')
     taxi.start()
     taxi.stop()
-    print('-'*30)
+    print('-'*30)'''
+
+'''
+import matplotlib.pyplot as plt
+from vector_drawing import *
+dino_vectors=[(6,4),(3,1),(1,2),(-1,5),(-2,5),(-3,4),(-4,4),(-5,3),(-5,2),(-2,2),(-5,1),(-4,0),(-2,1),(-1,0),(0,-3),(-1,-4),(1,-4),(2,-3),(1,-2),(3,-1),(5,1),(0,4)]
+draw(Points(*dino_vectors))
+draw(Points(*dino_vectors),Segment((6,4),(3,1)))
+draw(Points(*dino_vectors))
+draw(Points(*dino_vectors),Segment((3,1),(1,2)))
+draw(Points(*dino_vectors))
+draw(Points(*dino_vectors),Segment((1,2),(-1,5)))
+draw(Points(*dino_vectors))
+draw(Points(*dino_vectors),Segment((-1,5),(-2,5)))
+draw(Points(*dino_vectors))
+draw(Points(*dino_vectors),Segment((-2,5),(-3,4)))
+draw(Points(*dino_vectors))
+draw(Points(*dino_vectors),Segment((-3,4),(-4,4)))
+draw(Points(*dino_vectors))
+draw(Points(*dino_vectors),Segment((-4,4),(-5,3)))
+draw(Points(*dino_vectors))
+draw(Points(*dino_vectors),Segment((-5,3),(-5,2)))
+draw(Points(*dino_vectors))
+draw(Points(*dino_vectors),Segment((-5,2),(-2,2)))
+draw(Points(*dino_vectors))
+draw(Points(*dino_vectors),Segment((-2,2),(-5,1)))
+draw(Points(*dino_vectors))
+draw(Points(*dino_vectors),Segment((-5,1),(-4,0)))
+draw(Points(*dino_vectors))
+draw(Points(*dino_vectors),Segment((-4,0),(-2,1)))
+draw(Points(*dino_vectors))
+draw(Points(*dino_vectors),Segment((-2,1),(-1,0)))
+draw(Points(*dino_vectors))
+draw(Points(*dino_vectors),Segment((-1,0),(0,-3)))
+draw(Points(*dino_vectors))
+draw(Points(*dino_vectors),Segment((0,-3),(-1,-4)))
+draw(Points(*dino_vectors))
+draw(Points(*dino_vectors),Segment((-1,-4),(1,-4)))
+draw(Points(*dino_vectors))
+draw(Points(*dino_vectors),Segment((1,-4),(2,-3)))
+draw(Points(*dino_vectors))
+draw(Points(*dino_vectors),Segment((2,-3),(1,-2)))
+draw(Points(*dino_vectors))
+draw(Points(*dino_vectors),Segment((3,-1),(5,1)))
+draw(Points(*dino_vectors))
+draw(Points(*dino_vectors),Segment((5,1),(0,4)))
+'''
+'''import matplotlib.pyplot as plt
+from vector_drawing import *
+ye_vector=[(0,0),(2,-2)]
+draw(Points(*ye_vector),Arrow((2,-2),(0,0)))'''
 
 
 
+'''import matplotlib.pyplot as plt
+from vector_drawing import *
+dino_vectors=[(6,4),(3,1),(1,2),(-1,5),(-2,5),(-3,4),(-4,4),(-5,3),(-5,2),(-2,2),(-5,1),(-4,0),(-2,1),(-1,0),(0,-3),(-1,-4),(1,-4),(2,-3),(1,-2),(3,-1),(5,1),(6,4)]
+draw(Points(*dino_vectors),Polygon(*dino_vectors))
+
+'''
 
 
-
-
+'''import matplotlib.pyplot as plt
+from vector_drawing import *
+draw(Points(*[(x,x**2)for x in range(-10,11)]))
+grid=(1,10)
+nice_aspect_ratio=False'''
