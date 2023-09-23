@@ -1,7 +1,6 @@
-from math import sqrt, pi, ceil, floor
+from math import sqrt, ceil, floor
 import matplotlib
 import matplotlib.patches
-from matplotlib.collections import PatchCollection
 
 
 import numpy as np
@@ -64,7 +63,7 @@ def draw(*objects, origin=True, axes=True, grid=(1,1), nice_aspect_ratio=True,
     all_vectors = list(extract_vectors(objects))
     xs, ys = zip(*all_vectors)
 
-    max_x, max_y, min_x, min_y = max(0,*xs), max(0,*ys), min(0,*xs), min(0,*ys)
+    max_x, max_y, min_x, min_y = max(0, *xs), max(0, *ys), min(0, *xs), min(0, *ys)
 
     #sizing
     if grid:
